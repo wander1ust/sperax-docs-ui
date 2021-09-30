@@ -2,7 +2,7 @@
   "name": "Sperax Docs",
   "version": "0.0.0",
   "private": true,
-  "author": "infinite100p",
+  "author": "wander1ust",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

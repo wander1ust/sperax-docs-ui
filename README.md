@@ -1,6 +1,6 @@
 # Sperax Docs UI
 
-### 📜 [Disclaimer](#disclaimer)
+### 📜 [Author's Disclaimer](#disclaimer)
 <br/>
 
 ## Installation 
