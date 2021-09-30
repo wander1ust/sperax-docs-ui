@@ -1,0 +1,40 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  /*border: 1px solid cyan;*/
+}
+
+.feature {
+    padding-bottom: 8rem;
+
+  /*border: 1px solid darkgreen;*/
+}
+
+html[data-theme='dark'] .feature {
+  border: 1px solid cyan;
+  padding-bottom: 3rem;
+  /*background: skyblue;*/
+  /*display: inline-block;*/
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.typer {
+  /*position: relative;*/
+  color: red;
+  font-family: Terminal;
+}
+
+.refLink {
+  display: block;
+  line-height: 2;
+}
+
+.refLink:hover {
+  font-weight: 600;
+}

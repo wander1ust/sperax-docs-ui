@@ -1,0 +1,37 @@
+
+	🦋 Bug #1 
+	animation-timing-function 
+	  * Actual Output: variable speed from start -> end 
+	  		- animation starts off normal/fast but then slows down significantly
+	  		- tested with linear, cubic-bezier(1,1,1,1), initial, inherit - none of these work as expected - why?
+	  * Expected: animation speed should be constant 
+	  * Workaround: Positioned the animation to start higher up so that it's less apparent (Is iT A bUg Or A fEaTuRe? Yeah, it's a bug.)
+
+	🦋 Bug #2 
+	  * Quick hack - current implementation renders the selected theme + animation (light vs dark) based on toggle click count (odd or even). 
+
+	  * What's Desired: switching to the correct animation theme based on the theme icon that's displayed.
+
+	  * The Issue - when user returns to home page after navigating to another page, the theme is wrong. Idk how to update the value of stored `theme` variable with the inner text of '.react-toggle-track-x span'. useEffect() only running once on componentDidMount with empty dependency array.
+
+  	✋ Blocker
+	   * Snowfall animation - delay rendering per snow batch to emulate snow falling
+	   How to render element with setTimeout in React?? setState var?
+	   Append HTML elmt -> div -> DOM - how? Possible? Bad?
+
+	Run a test on the following features after deployed live:
+		✅ Translations
+		✅ Multiple doc versions
+
+	TODOs:
+	clean up code, delete all unused extra function parameters, merge params, refactor code, delete comments
+
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	        Move To Section Below When Debugged 🥳
+	* * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	🦋 Issue: Bad algorithm
+	useEffect hook + non-empty dependency array + click event listener - runs slower & slower at each call. Time complexity doubles after every iteration past the 3rd call within a cycle - why?
+	
+	Solution: 
+	Remove dependency, pass empty array, define counter variable with useState, increase counter variable by 1 on every user click, update counter var, AND THEN update count with setCount(count). Async/await not needed!

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: trash/index-2.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: trash/index-2.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useEffect, useState } from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures'
+import ReactTypingEffect from 'react-typing-effect';
+
+
+const createStars = (n) => {
+    let arr = [...Array(n).keys()]
+    let stars = [];
+    
+    // let star = &lt;div key={i} id={i} className={styles.star + ' ' + styles.starShine} 
+    //          style={{left:'10', top:'10'}}>*&lt;/div>
+
+    // for(var i = 0; i &lt; 250; i++) {
+    arr.map( (star, i) => {
+       let top = (Math.random() * 1300);
+       let left = Math.floor(Math.random() * (400 - 0 + 1) + 0);  
+       let right = Math.floor(Math.random() * (1300 - 600 + 1) + 600);  
+       let delay = (Math.random() * 50) + 's';
+
+       stars.push( 
+            &lt;div key={i} id={i} className={styles.star + ' ' + styles.starShine}
+             style={{left:left, top:top, animationDelay: delay, webKitAnimationDelay: (Math.random() * 20) + 's', mozAnimationDelay: (Math.random() * 20) + 's'}}>✶&lt;/div>  
+       )        
+       stars.push( 
+            &lt;div key={i} id={i} className={styles.star + ' ' + styles.starShine}
+             style={{left:right, top:top, animationDelay: delay, webKitAnimationDelay: (Math.random() * 20) + 's', mozAnimationDelay: (Math.random() * 20) + 's'}}>✶&lt;/div>  
+       )                 
+    })
+    return stars;
+  // }
+}
+
+/**
+ *  Render CSS animated elements by type
+ *  @param {String} type -  Content type ('star' or 'snow')
+ *  @param {Number} count -  Number of particle elements to generate
+ *  @returns {Array} - Array of particle elements with CSS animation
+ */
+const renderParticles = (theme, themeAnimation, toggleClickCount, count, delay, extraDelay) => {
+    let arr = [...Array(count).keys()];
+    let snow = [];
+    const [hasSnowed, setHasSnowed] = useState(false);
+    // const [isSnowing, setIsSnowing] = useState(false);
+    const [currentTheme, setCurrentTheme] = useState('light');  
+    // const [particle, setParticle] = useState('❆');  
+
+    const defaultDelay = themeAnimation[theme]['animationDelay'];
+
+    arr.map( (snowflake, i) => {
+       let top = (Math.random() * 1300);
+       let n = (Math.random() * 1300);
+       let left = Math.floor(Math.random() * (380 - 0 + 1) + 0);  
+       let right = Math.floor(Math.random() * (1200 - 600 + 1) + 600);  
+       let delay = (Math.random() * 50) + 's'; 
+
+       // defaultDelay (animationDelay) must be #, not string
+       defaultDelay &amp;&amp; (delay = (defaultDelay + extraDelay) + 's');
+       // defaultDelay &amp;&amp; (delay = (1 + 12) + 's');
+       
+
+       snow.push(createParticle(theme, themeAnimation, toggleClickCount, i, top, left, delay, extraDelay))
+       snow.push(createParticle(theme, themeAnimation, toggleClickCount, i + arr.length, top, right, delay, extraDelay))
+     })
+
+     // useEffect(() => {
+     //    particle = theme == 'light' ? '❆' : '✶';
+     //    setParticle(particle);
+     //    if ()
+     //    document.querySelector('.particle').style.content = ''
+     // }, [theme])           
+    
+    // toggleClickCount &lt;= 2 ? snow : null;
+     
+    return snow;
+}
+
+/**
+ *  Create CSS animated DOM element based on type
+ *  @param {String} type - Content type ('star' or 'snow')
+ *  @param {Number} i - Index
+ *  @param {Number} top - Position top
+ *  @param {Number} left - Position left
+ *  @param {Number} delay - CSS animation delay (in seconds)
+ *  @returns {Array} - Array of snowflake elements with CSS animation
+ */
+const createParticle = (theme, themeAnimation, toggleClickCount, i, top, left, delay) => { 
+  theme = toggleClickCount % 2 ? 'dark' : 'light';
+  const themeChoice = themeAnimation[theme];
+  const type = themeChoice['type'];
+
+  return &lt;div key={i} id={`${type}-${i}`} className={((type == 'snow') ? styles.snow : styles.star) + ' ' + themeChoice['animationClass'] + ' particle' + ' ' + type} style={{left:left, top:top, animationDelay: delay, webKitAnimationDelay: delay, mozAnimationDelay: delay, animationTimingFunction: 'linear'}}>{themeChoice['particle']}&lt;/div>    
+}
+
+
+function HomepageHeader(props) {
+  const {siteConfig} = useDocusaurusContext();
+  let arr = [1, 2, 3, 4, 5];
+  let top = (Math.random() * 100);
+  let left = (Math.random() * 100);
+  return (
+    &lt;header className={clsx('hero hero--primary', styles.heroBanner)}>
+
+{/*      &lt;div id="starshine">
+            {createStars(150).map(star => {
+              return star;
+            })}
+      &lt;/div>*/}
+      {toggleThemeListen(props.theme, props.setTheme, props.setParticle, props.themeAnimation, props.setIsSnowing, props.toggleClickCount, props.setToggleClickCount, props.banner, props.setBanner)}
+
+{handleThemeChange(props.theme, props.themeAnimation, props.toggleClickCount)}
+      {/*{ renderParticles('snow', 200, '1s') }*/}
+{/*      { renderParticles(props.theme, props.themeAnimation, props.toggleClickCount, 200, 1, 0) 
+      }
+      {
+        isSnowing(props.theme, props.themeAnimation) ?
+        renderParticles(props.theme, props.themeAnimation, props.toggleClickCount, 500, 1, 2) : renderParticles(props.theme, props.themeAnimation, props.toggleClickCount, 0, 0, 0) 
+        // moreSnow(props.theme, props.themeAnimation)
+      }*/}
+
+      &lt;div className="container">
+        &lt;h1 className={styles.title}>{siteConfig.title}&lt;/h1>
+        {/*&lt;p className="hero__subtitle">{siteConfig.tagline}&lt;/p>*/}
+
+        &lt;ReactTypingEffect 
+                className={styles.typer}
+                text={[
+                  "Build on the blockchain.", 
+                  "Learn. Develop. Scale.", 
+                  "Finance + Decentralized Tech 🔥", 
+                  "Made for crypto enthusiasts."
+                ]}
+                cursorRenderer={cursor => &lt;h1>{cursor}&lt;/h1>}
+                speed={150}
+                typingDelay={100}
+                eraseSpeed={50}
+                displayTextRenderer={(text, i) => {
+                    return (
+                    &lt;h3>
+                    {text.split('').map((tagline, i) => {
+                        return (
+                          &lt;span key={i} className={styles.tagline} >
+                            {tagline}
+                          &lt;/span>
+                        )
+                    })}
+                    &lt;/h3>
+                    )
+                  }}
+        />
+
+
+
+        &lt;div className={styles.buttons}>
+          &lt;Link
+            className={clsx("button button--secondary button--lg", styles.button)}
+            to="/docs/next/intro">
+            Get Started
+          &lt;/Link>
+        &lt;/div>
+      &lt;/div>
+    &lt;/header>
+
+  );
+}
+
+/** Bug - bad algorithm with non-empty dependency array in useEffect hook - runs slower &amp; slower at each call. Time complexity gets worse &amp; worse after every iteration within a cycle - why?
+/**
+ * Event listener for toggle click
+ * Update theme &amp; particle variables when user switches theme
+ * @param  {String} theme - Current stored theme mode ('light' or 'dark')
+ * @param  {Object} setTheme - React component method
+ * @param  {Object} setParticle - React component method
+ * @return {void}
+ */
+function toggleThemeListen(theme, setTheme, setParticle, themeAnimation, setIsSnowing, toggleClickCount, setToggleClickCount, banner, setBanner) {  
+  // let banner = document.querySelector('.heroBanner').style.background;
+  var bannerElmt = {};
+  let toggleSwitch = {};
+  var bannerElmtStyle = '';
+  var useEffectCount = 0;
+  // setBanner(banner);
+    useEffect(() => {
+      bannerElmt = document.querySelector('.heroBanner_src-pages-index-module');
+      bannerElmtStyle = window.getComputedStyle(bannerElmt);
+      setBanner(bannerElmtStyle.getPropertyValue('color'));
+
+      console.log(`banner color: ${banner}`);
+      console.log(`banner obj: ${document.querySelector('.heroBanner_src-pages-index-module')}`);
+      console.log(`banner2: ${document.querySelector('.heroBanner_src-pages-index-module').style.color}`);
+  }, [toggleClickCount])
+  useEffect(() => {
+    toggleSwitch = document.querySelector('.react-toggle-track');
+    useEffectCount = useEffectCount + 1; // count never increases past 1 - why??
+    // .toggle_node_modules-\@docusaurus-theme-classic-lib-next-theme-Toggle-styles-module
+   // toggleSwitch &amp;&amp;
+    toggleSwitch.addEventListener("click", () =>{
+      let switchThemeTo = isThemeLight(theme) ? 'dark' : 'light'
+        // alert('yo');
+       setTheme(switchThemeTo);
+       setToggleClickCount(toggleClickCount + 1);
+       count = count + 1;
+
+       // switchThemeTo == 'dark' ? setParticle(themeAnimation.dark.particle) : setParticle(themeAnimation.light.particle);
+
+       // (themeAnimation[theme]['animationClass'] == styles.snowfall) ? setIsSnowing(true) : setIsSnowing(false)
+       setIsSnowing(isSnowing(theme, themeAnimation));
+
+       // document.querySelector('.snow').classList.add('visibile');
+  
+
+
+    })
+      console.log(`toggleClickCount: ${toggleClickCount}`);
+      console.log(`useEffectCount: ${useEffectCount}`);
+      console.log(`banner out: ${banner}`);
+  }, [toggleClickCount])
+}
+function handleThemeChange(theme, themeAnimation, toggleClickCount) {
+  // const handleThemeChange = (theme, themeAnimation, toggleClickCount) => {
+    useEffect(() => {
+      console.log('hi')       
+      console.log(`toggleClickCount: ${toggleClickCount}`);
+    }, [toggleClickCount])
+  // }  
+  return renderParticles(theme, themeAnimation, toggleClickCount, 200, 1, 0)
+  // return &lt;div>{toggleClickCount}&lt;/div>;
+}
+
+/**
+ * @param  {String} theme - Current stored theme mode ('light' or 'dark')
+ * @return {boolean}
+ */
+const isThemeLight = (theme) => {
+  return theme == 'light';
+}
+
+const isSnowing = (theme, themeAnimation) => {
+  return themeAnimation[theme]['animationClass'] == styles.snowfall;
+}
+
+const handleSnowing = () => {
+  useEffect(() => {
+    isSnowing &amp;&amp;
+       document.querySelectorAll('.snow').forEach((p) => {
+          p.style.color = 'pink';
+       })
+  
+  }, [isSnowing])
+}
+
+const moreSnow = (theme, themeAnimation) => {
+  // useEffect(() => {
+    renderParticles(theme, themeAnimation, 'star', 800, '10s');
+    alert('snowing');
+  // }, [isSnowing])  
+}
+
+// function setBanner(banner) {
+//   useEffect(() => {
+//     setBanner(document.querySelector('.hero.hero--primary.heroBanner_src-pages-index-module').style.background);
+//     console.log(`banner: ${banner}`);
+//   }, [banner])
+// }
+
+export default function Home() {
+  const {siteConfig} = useDocusaurusContext();  
+  const [theme, setTheme] = useState('light');
+  const [toggleClickCount, setToggleClickCount] = useState(0);
+  const [particle, setParticle] = useState('❆');
+  const [isSnowing, setIsSnowing] = useState(true);
+  const [banner, setBanner] = useState('');
+  const [themeAnimation, setThemeAnimation] = useState(
+    {
+      light: { type: 'snow', particle: '❆', animationClass: styles['snowfall'], animationDelay: 1 }, 
+      dark: { type: 'star', particle: '✶', animationClass: styles['twinkle-star'], animationDelay: null } 
+    });
+
+  // {() => {setBanner()}}
+
+  // async() => {await toggleThemeListen()}
+  // alert(theme);
+  // handleSnowing();
+
+  // toggleThemeListen(theme, setTheme, setParticle, themeAnimation, setIsSnowing, toggleClickCount, setToggleClickCount);
+  // handleThemeChange(theme, themeAnimation, toggleClickCount);
+  
+  // themeChanged(theme);
+  return (
+    &lt;Layout
+      title={`${siteConfig.title}`}
+      description="Description will go into a meta tag in &lt;head />">
+      &lt;HomepageHeader theme={theme} themeAnimation={themeAnimation} setThemeAnimation={setThemeAnimation} isSnowing={isSnowing} toggleClickCount={toggleClickCount} setTheme={setTheme} setIsSnowing={setIsSnowing} setToggleClickCount={setToggleClickCount} setParticle={setParticle} banner={banner} setBanner={setBanner} />
+      &lt;main>
+      
+        &lt;HomepageFeatures />
+      }
+      &lt;/main>
+    &lt;/Layout>
+  );
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="themeAnimation.html">themeAnimation</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createParticle">createParticle</a></li><li><a href="global.html#Feature">Feature</a></li><li><a href="global.html#FeatureList">FeatureList</a></li><li><a href="global.html#handleSnowing">handleSnowing</a></li><li><a href="global.html#handleThemeChange">handleThemeChange</a></li><li><a href="global.html#HomepageHeader">HomepageHeader</a></li><li><a href="global.html#isSnowing">isSnowing</a></li><li><a href="global.html#isThemeLight">isThemeLight</a></li><li><a href="global.html#renderParticles">renderParticles</a></li><li><a href="global.html#toggleThemeListen">toggleThemeListen</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Wed Sep 29 2021 09:40:47 GMT-0400 (Eastern Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
