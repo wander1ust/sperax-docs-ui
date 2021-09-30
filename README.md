@@ -1,4 +1,10 @@
-## Installation
+# Sperax Docs UI
+<br/>
+
+### 📜 [Author's Disclaimer](#disclaimer)
+<br/>
+
+## Installation 
 1. Clone this repository
 2. Run **`npm run install`** from the root directory to install all dependencies
 3. Run **`npm run start`** to run on a local development server 
@@ -56,15 +62,17 @@ This is what confused me most about the challenge requirements. Unless Sperax re
 
 <br/>
 
-## 📜 Disclaimer 
+## Disclaimer
 
 By accessing and accepting this project submission, you agree that you have read and understand the terms below. 
 
 The core template (backbone) of this project is powered by a third party open source software provider (Facebook™), and is used, modified, and published with permission under the [MIT license](https://github.com/facebook/docusaurus/blob/main/LICENSE). JPG images in `static/img` are Unsplash photos, which are free to download, use, modify, and distribute under the [Unsplash license](https://unsplash.com/license). 
 The name, "Sperax", along with the Sperax blockchain company logo (retrieved from the company's website) are used strictly in accordance with the guidelines, only within the context of the hackathon. 
 
-This project was created with the sole purpose of submitting to a hackathon or contest. Parts of this code were authored and refactored by a non-developer whose knowledge on web dev and React.js is limited to a [React crash course video](https://youtube.com/watch?v=sBws8MSXN7A), an unhealthy amount of DuckDuckGo-ing, and random trial & error. This explains the difficult to decipher spaghetti code that is ~~potentially~~ likely riddled with bugs and inefficient algos. A list of known bugs are documented in `bugs.txt`. Any file containing code written by the author is marked with a red octagonal stop sign emoji 🛑 at the top as fair warning. Accept or use at your own risk and discretion. 
+This project was created with the sole purpose of submitting to the 'Sperax USD Docs Navigation UI' contest. Parts of this code were authored and refactored by a non-developer whose knowledge on web dev and React.js is limited to a [React crash course video](https://youtube.com/watch?v=sBws8MSXN7A), an unhealthy amount of DuckDuckGo-ing, and random trial & error. This explains the difficult to decipher spaghetti code that is ~~potentially~~ likely riddled with bugs and inefficient algos. A list of known bugs are documented in `bugs.txt`. Any file containing code written by the author is marked with a red octagonal stop sign emoji 🛑 at the top as fair warning. Accept or use at your own risk and discretion. 
 
-TL;DR Please don't come after me! ☮️🧘🏻‍♀️🙏
+__
+
+**TL;DR** &nbsp; Please don't come after me! ☮️🧘🏻‍♀️🙏
 
 <br />
