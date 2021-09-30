@@ -1,5 +1,4 @@
 # Sperax Docs UI
-<br/>
 
 ### 📜 [Author's Disclaimer](#disclaimer)
 <br/>
