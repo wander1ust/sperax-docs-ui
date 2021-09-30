@@ -1,6 +1,10 @@
 # Sperax Docs UI
 
-### 📜 [Author's Disclaimer](#disclaimer)
+<br/>
+
+## Table of Contents 
+**[Disclaimer](#disclaimer)** | **[Installation](#installation)** | **[Deployment](#deployment)** | **[Why Docusaurus?](#why-docusaurus)** | **[Animations Demo](#animations-demo)** | **[Video Demo](#video-demo)** | **[Design Walkthrough](#design-walkthrough)**
+
 <br/>
 
 ## Installation 
@@ -31,25 +35,44 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 <br />
 
 ## Animations Demo
-![darkTheme-twinkleStars](static/screen%20shots/darkTheme-twinkleStars.gif)
-![lightTheme-snowFall](static/screen%20shots/lightTheme-snowFall.gif)
-![lightTheme-snowMelt](static/screen%20shots/lightTheme-snowMelt.gif)
+### Twinkle Stars ✨
+#### Default
+![darkTheme-twinkleStars](static/screen%20shots/darkTheme-100-twinkleStars.gif)
+#### Night Sky
 ![nightSky-starsTwinkle](static/screen%20shots/nightSky-starsTwinkle.gif)
+#### Milky Way
 ![milky-way](static/screen%20shots/milky%20way.gif)
 
-Not enough stars? Your wish is my (code's) command.
-Enjoy one with 2,000 stars:
-![2,000-stars](./static/img/screen%20shots/2,000%20stars.gif)
+### Snow Fall 
+#### Normal style
+![lightTheme-snowFall](static/screen%20shots/lightTheme-snowFall.gif)
 
-Here's another 🌟 for good luck!
+### Snow Melt 
+#### Curtain style
+![lightTheme-snowMelt](static/screen%20shots/lightTheme-snowMelt.gif)
+
+<br/>
+
+#### Not enough stars? Your wish is my (code's) command.
+
+#### Enjoy one with 2,000 stars:
+
+![2,000-stars](static/screen%20shots/2,000%20stars.png)
+
+#### And another 🌟 for good luck!
+
+#### Sick of stars? Here is a static banner with no twinkling stars 🙁
+![0-stars](static/screen%20shots/clear%20banner.png)
 
 <br />
 
 ## Video Demo
-[![Video Demo](./static/img/misc/video-thumbnail.png)](https://rebrand.ly/sperax-docs-ui-demo)
+<a href="https://rebrand.ly/sperax-docs-ui-demo" target="_blank"><img src="./static/img/misc/video-thumbnail.png" /></a>
+
+<br/>
 
 ## Design Walkthrough
-What do stars and snow have to do with crypto finance, deFi, or blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly "a definitive source of truth" (so I've heard). Stars in a constellation are like nodes on a blockchain...
+What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly "a definitive source of truth" (so I've heard). Stars in a constellation are like nodes on a blockchain...
 
 If all that sounds like a stretch, it's cause it is lol. I went with these themes just because 😂.
 
@@ -75,4 +98,4 @@ __
 **TL;DR** &nbsp; Please don't come after me! ☮️🧘🏻‍♀️🙏
 
 
-#### ✅ [I accept these terms](#installation)
+#### ✅ [I accept these terms](#table-of-contents)
