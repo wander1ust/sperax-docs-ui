@@ -61,7 +61,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 #### And another 🌟 for good luck!
 
-#### Sick of stars? Here is a static banner with no twinkling stars 🙁
+#### Sick of stars? Here is a banner with no twinkling stars 🙁
 ![0-stars](static/screen%20shots/clear%20banner.png)
 
 <br />
