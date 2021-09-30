@@ -31,11 +31,11 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 <br />
 
 ## Animations Demo
-![darkTheme-twinkleStars](./static/img/screen%20shots/darkTheme-twinkleStars.gif)
-![lightTheme-snowFall](./static/img/screen%20shots/lightTheme-snowFall.gif)
-![lightTheme-snowMelt](./static/img/screen%20shots/lightTheme-snowMelt.gif)
-![nightSky-starsTwinkle](./static/img/screen%20shots/nightSky-starsTwinkle.gif)
-![milky-way](./static/img/screen%20shots/milky%20way.gif)
+![darkTheme-twinkleStars](static/screen%20shots/darkTheme-twinkleStars.gif)
+![lightTheme-snowFall](static/screen%20shots/lightTheme-snowFall.gif)
+![lightTheme-snowMelt](static/screen%20shots/lightTheme-snowMelt.gif)
+![nightSky-starsTwinkle](static/screen%20shots/nightSky-starsTwinkle.gif)
+![milky-way](static/screen%20shots/milky%20way.gif)
 
 Not enough stars? Your wish is my (code's) command.
 Enjoy one with 2,000 stars:
