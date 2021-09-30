@@ -3,7 +3,7 @@
 <br/>
 
 ## Table of Contents 
-**[Disclaimer](#disclaimer)** | **[Installation](#installation)** | **[Deployment](#deployment)** | **[Why Docusaurus?](#why-docusaurus)** | **[Animations Demo](#animations-demo)** | **[Video Demo](#video-demo)** | **[Design Walkthrough](#design-walkthrough)**
+**[Disclaimer](#disclaimer)** &nbsp; | &nbsp; **[Installation](#installation)** &nbsp;| &nbsp;**[Deployment](#deployment)** &nbsp;| &nbsp;**[Why Docusaurus?](#why-docusaurus)** &nbsp;| **[Animations](#animations)** &nbsp;| **[Video](#video)** &nbsp;|&nbsp; **[Design Process](#design-process)**
 
 <br/>
 
@@ -34,7 +34,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 <br />
 
-## Animations Demo
+## Animations
 ### Twinkle Stars ✨
 #### Default
 ![darkTheme-twinkleStars](static/screen%20shots/darkTheme-100-twinkleStars.gif)
@@ -55,30 +55,39 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 #### Not enough stars? Your wish is my (code's) command.
 
-#### Enjoy one with 2,000 stars:
+Enjoy one with 2,000 stars:
 
 ![2,000-stars](static/screen%20shots/2,000%20stars.png)
 
-#### And another 🌟 for good luck!
+Here's another 🌟 for good luck!
 
-#### Sick of stars? Here is a banner with no twinkling stars 🙁
+#### Sick of stars? Disable animation to get a banner with no twinkling stars 🙁
+
 ![0-stars](static/screen%20shots/clear%20banner.png)
+
+### More Screen Shots
+![homepage feature](static/screen%20shots/homepage-feature.png)
+
+![doc sample](static/screen%20shots/doc-1.png)
+
 
 <br />
 
-## Video Demo
+## Video
 <a href="https://rebrand.ly/sperax-docs-ui-demo" target="_blank"><img src="./static/img/misc/video-thumbnail.png" /></a>
+
+**Note**: If video link is broken, then that means I never got around to creating a video.
 
 <br/>
 
-## Design Walkthrough
-What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly "a definitive source of truth" (so I've heard). Stars in a constellation are like nodes on a blockchain...
+## Design Process
+What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly a "definitive source of truth" (**[so I've heard](https://youtube.com/watch?v=EsVVhjv1FT4)**). Stars in a constellation are like nodes on a blockchain...
 
-If all that sounds like a stretch, it's cause it is lol. I went with these themes just because 😂.
+If all that sounds like a stretch, it's cause it is lol. I went with these themes just because. 😂
 
-It's challenging to design for a brand knowing very little to nothing about it. Not just the brand, but also the customers/audience and the niche that the company operates in. I checked Sperax's website, but honestly, I don't understand what Sperax is or does. It covered some highly complex, technical stuff & language that I skimmed over. So I just focused on the other elements & layout. I noticed there isn't really a defined color scheme, but some shades of green, blue, purple did stand out. 
+It's challenging to design for a brand knowing very little to nothing about it. Not just the brand, but also the customers/audience and the niche that the company operates in. I checked Sperax's website, but honestly, I don't get what Sperax is or does. Skimming over the text, I realized that most of the technical concepts presented were beyond my knowledge and understanding. So I just focused on the elements & layout on the webpage. I noticed that there isn't much of a defined color scheme. Some shades of green, blue, and purple stood out, so I stuck with those colors.
 
-So yeah, there really isn't much to the design. The Docusarus template is solid on its own, and everything that is needed is accessible in the public domain. No need to reinvent the wheel and aim to design/develop a template from scratch when a free, perfectly working, routinely tested, (did I say *free*?), out-of-the-box solution already exists. 
+There really isn't much to the design. The Docusarus template is solid on its own, and everything that is needed is accessible in the public domain. No need to reinvent the wheel and aim to design/develop a template from scratch when a free, perfectly working, routinely tested, (did I say *free*?), out-of-the-box solution already exists. 
 
 This is what confused me most about the challenge requirements. Unless Sperax requires a private, decentralized alternative (which now that I think about it, probably makes more sense 🤔), I believe Docusaurus on its own fits the bill quite nicely for Sperax USD Docs. What matters most about a code documentation site is the content, content flow, and functionality - less so the appearance and design. Replace the text, add some images, change the colors to align with the Sperax brand and, voilà, you have yourself a neat code documentation site. All this in just a matter of minutes 👍. Maybe throw in a user feedback poll at the bottom of each guide or doc to spice things up. This is my 2¢ 🙂.
 
@@ -91,7 +100,7 @@ By accessing and accepting this project submission, you agree that you have read
 The core template (backbone) of this project is powered by a third party open source software provider (Facebook™), and is used, modified, and published with permission under the [MIT license](https://github.com/facebook/docusaurus/blob/main/LICENSE). JPG images in `static/img` are Unsplash photos, which are free to download, use, modify, and distribute under the [Unsplash license](https://unsplash.com/license). 
 The name, "Sperax", along with the Sperax blockchain company logo (retrieved from the company's website) are used strictly in accordance with the guidelines, only within the context of the hackathon. 
 
-This project was created with the sole purpose of submitting to the 'Sperax USD Docs Navigation UI' contest. Parts of this code were authored and refactored by a non-developer whose knowledge on web dev and React.js is limited to a [React crash course video](https://youtube.com/watch?v=sBws8MSXN7A), an unhealthy amount of DuckDuckGo-ing, and random trial & error. This explains the difficult to decipher spaghetti code that is ~~potentially~~ likely riddled with bugs and inefficient algos. A list of known bugs are documented in `bugs.txt`. Any file containing code written by the author is marked with a red octagonal stop sign emoji 🛑 at the top as fair warning. Accept or use at your own risk and discretion. 
+This project was created with the sole purpose of submitting to the 'Sperax USD Docs Navigation UI' contest. Parts of this code were authored and refactored by a non-developer whose knowledge on web development and React.js is limited to a [React crash course video](https://youtube.com/watch?v=sBws8MSXN7A), an unhealthy amount of DuckDuckGo-ing, random online tutorials, and trial & error. This explains the difficult to decipher spaghetti code that is ~~potentially~~ likely riddled with bugs and inefficient algos. A list of known bugs are documented in `bugs.txt`. Any file containing code written by the author is marked with a red octagonal stop sign emoji 🛑 at the top as fair warning. Accept or use at your own risk and discretion. 
 
 __
 
