@@ -74,4 +74,5 @@ __
 
 **TL;DR** &nbsp; Please don't come after me! ☮️🧘🏻‍♀️🙏
 
-<br />
+
+#### ✅ [I accept these terms](#installation)
