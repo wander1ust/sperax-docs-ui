@@ -15,14 +15,14 @@
 }
 
 .heroBanner {
-  background: url('../../static/img/1.jpg') no-repeat center center fixed;
+  background: url('../../static/img/misc/1.jpg') no-repeat center center fixed;
   background-size: cover;  
   /*opacity: 0.8;*/
   color: #000;
 }
 
 html[data-theme='dark'] .heroBanner {
-  background: url('../../static/img/5.jpg') no-repeat center center fixed;
+  background: url('../../static/img/misc/5.jpg') no-repeat center center fixed;
   background-size: cover;  
   color: #f6f6f6;
 }
