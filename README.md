@@ -1,7 +1,6 @@
 # Sperax Docs UI
 
-### 📜 [Author's Disclaimer](#disclaimer)
-<br/>
+### 📜 [Disclaimer](#disclaimer)
 
 ## Installation 
 1. Clone this repository
