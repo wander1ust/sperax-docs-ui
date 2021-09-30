@@ -61,7 +61,7 @@ Enjoy one with 2,000 stars:
 
 ![2,000-stars](static/screen%20shots/2,000%20stars.png)
 
-Here's another 🌟 for good luck!
+And an extra 🌟 for good luck!
 
 #### Sick of stars? Disable animation to get a banner with no twinkling stars 🙁
 
