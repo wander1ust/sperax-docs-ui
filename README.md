@@ -3,7 +3,7 @@
 <br/>
 
 ## Table of Contents 
-**[Disclaimer](#disclaimer)** &nbsp; | &nbsp; **[Installation](#installation)** &nbsp;| &nbsp;**[Deployment](#deployment)** &nbsp;| &nbsp;**[Why Docusaurus?](#why-docusaurus)** &nbsp;| **[Animations](#animations)** &nbsp;| **[Video](#video)** &nbsp;|&nbsp; **[Design Process](#design-process)**
+**[Disclaimer](#disclaimer)** &nbsp; | &nbsp; **[Installation](#installation)** &nbsp;| &nbsp;**[Deployment](#deployment)** &nbsp;| &nbsp;**[Why Docusaurus?](#why-docusaurus)** &nbsp;| **[Animated Themes](#animated-themes)** &nbsp;|&nbsp; **[Video](#video)** &nbsp;|&nbsp; **[Design Process](#design-process)**
 
 <br/>
 
@@ -34,8 +34,8 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 <br />
 
-## Animations
-### Twinkle Stars ✨
+## Animated Themes
+### Dark Theme ~ ✨ Twinkle Stars ✨
 #### Default
 ![darkTheme-twinkleStars](static/screen%20shots/darkTheme-100-twinkleStars.gif)
 #### Night Sky
@@ -43,7 +43,9 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 #### Milky Way
 ![milky-way](static/screen%20shots/milky%20way.gif)
 
-### Snow Fall 
+<br/>
+
+### Light Theme ~ Snow Fall 
 #### Normal style
 ![lightTheme-snowFall](static/screen%20shots/lightTheme-snowFall.gif)
 
@@ -81,7 +83,7 @@ Here's another 🌟 for good luck!
 <br/>
 
 ## Design Process
-What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly a "definitive source of truth" (**[so I've heard](https://youtube.com/watch?v=EsVVhjv1FT4)**). Stars in a constellation are like nodes on a blockchain...
+What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly a "definitive source of truth" (**[so I've heard](https://yewtu.be/watch?v=HiuvsLNCg-Y)**). Stars in a constellation are like nodes on a blockchain...
 
 If all that sounds like a stretch, it's cause it is lol. I went with these themes just because. 😂
 
