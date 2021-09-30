@@ -76,9 +76,9 @@ And an extra 🌟 for good luck!
 <br />
 
 ## Video
-Click to watch the video in a new browser tab. 
+<a href="https://rebrand.ly/sperax-docs-ui-demo" target="_blank"><img src="./static/screen%20shots/video-thumbnail.png" /></a>
 
-<a href="https://rebrand.ly/sperax-docs-ui-demo" target="_blank"><img src="./static/img/misc/video-thumbnail.png" /></a>
+Click to watch the video in a new browser tab. 
 
 <br/>
 
