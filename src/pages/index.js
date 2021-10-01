@@ -9,8 +9,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 /*** 
 
-   🛑 Unfinished, faulty code in draft - do NOT use as is.
-      Needs work. No bueno. Muy malo. 👎
+/* 🛑 This file contains amateur authored code. Proceed and test with caution. */
 
    Resources:
 

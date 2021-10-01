@@ -61,7 +61,7 @@ Enjoy one with 2,000 stars:
 
 ![2,000-stars](static/screen%20shots/2,000%20stars.png)
 
-And an extra 🌟 for good luck!
+Here's another 🌟 for good luck!
 
 #### Sick of stars? Disable animation to get a banner with no twinkling stars 🙁
 
@@ -85,11 +85,11 @@ Click to watch the video in a new browser tab.
 ## Design Process
 What do stars and snow have to do with crypto finance, deFi, and blockchain? Well, stars and snow are one with nature ... nature is perceived as a source of truth ... and blockchain/smart contracts are supposedly a "definitive source of truth" (**[so I've heard](https://yewtu.be/watch?v=HiuvsLNCg-Y)**). Stars in a constellation are like nodes on a blockchain...
 
-If all that sounds like a stretch, it's cause it is lol. I went with these themes just because. 😂
+If all that sounds like a stretch, it's cause it is lol. I chose these themes just because. 😂
 
 It's challenging to design for a brand knowing very little to nothing about it. Not just the brand, but also the customers/audience and the niche that the company operates in. I checked Sperax's website, but honestly, I don't get what Sperax is or does. Skimming over the text, I realized that most of the technical concepts presented were beyond my knowledge and understanding. So I just focused on the elements & layout on the webpage. I noticed that there isn't much of a defined color scheme. Some shades of green, blue, and purple stood out, so I stuck with those colors.
 
-There really isn't much to the design. The Docusarus template is solid on its own, and everything that is needed is accessible in the public domain. No need to reinvent the wheel and aim to design/develop a template from scratch when a free, perfectly working, routinely tested, (did I say *free*?), out-of-the-box solution already exists. 
+There really isn't much to the design. Docusarus is solid as a standalone site generator. Everything that is needed is accessible in the public domain. No need to reinvent the wheel and aim to design/develop a template from scratch when a free, perfectly working, routinely tested, (did I say *free*?), out-of-the-box solution already exists. 
 
 This is what confused me most about the challenge requirements. Unless Sperax requires a private, decentralized alternative (which now that I think about it, probably makes more sense 🤔), I believe Docusaurus on its own fits the bill quite nicely for Sperax USD Docs. What matters most about a code documentation site is the content, content flow, and functionality - less so the appearance and design. Replace the text, add some images, change the colors to align with the Sperax brand and, voilà, you have yourself a neat code documentation site. All this in just a matter of minutes 👍. Maybe throw in a user feedback poll at the bottom of each guide or doc to spice things up. This is my 2¢ 🙂.
 
